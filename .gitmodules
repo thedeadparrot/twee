@@ -1,3 +1,3 @@
 [submodule "targets/sugarcane"]
 	path = targets/sugarcane
-	url = git@github.com:thedeadparrot/sugarcane.git
+	url = git@gh-parrot:thedeadparrot/sugarcane.git
