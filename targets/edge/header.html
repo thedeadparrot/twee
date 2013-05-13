@@ -177,13 +177,15 @@ body{background-color:#fff;color:#000;font-family:Roboto,sans-serif;font-size:1e
 #storyAuthor{font-size:60%;}#sidebar #storyMenu{display:none;line-height:2.5em;margin-bottom:.5em;}#sidebar #title:hover{color:#333;}#sidebar #credits{padding-top:2em;font-weight:normal;font-size:60%;cursor:auto;}#sidebar #credits:hover{color:#333;}#sidebar #credits a{text-decoration:none;}.menu{position:absolute;display:none;background-color:#343434;color:#fff;opacity:.9;border:1px solid #fff;text-align:left;font:1em Roboto;line-height:2em;}.menu div{padding:0 .4em;}.menu div:hover{cursor:pointer;background-color:#fff;color:#343434;}#passages{margin-left:15em;border-left:1px solid #333;padding-left:1.5em;}.passage{font-size:1.05em;line-height:150%;margin-bottom:2em;text-align:left;}.passage ul{padding-top:1.3em;/*text-align:center;*/}.passage li{/*display:inline;*/margin-right:6em;}a.internalLink,a.externalLink,a.back,a.return{color:#086CA2;font-weight:bold;text-decoration:none;}a.internalLink:hover,a.externalLink:hover,a.back:hover,a.return:hover{color:#3C9DD0;text-decoration:underline;}a.brokenLink{background-color:red;text-decoration:none;color:#000;}.marked{background-color:red;color:#000;margin-right:12px;padding:3px;}.passage ul{margin-left:.5em;padding-left:1.5em;}.passage ol{margin-left:.5em;padding-left:1.5em;}.passage table{border-collapse:collapse;font-size:100%;margin:.8em 1.0em;}.passage th,.passage td,.passage tr,.passage caption{padding:3px;}.passage hr{height:1px;}#storeArea{display:none;}
 .addition
 {
-    transition: 1.5s;
-    -webkit-transiton: 1.5s;
+    transition: 2s;
+    -webkit-transiton: 2s;
+    -moz-transition: 2s;
 }
 .passage:not(.transition-out)
 {
     transition: 1s;
     -webkit-transiton: 1s;
+    -moz-transiton: 1s;
 }
 .addition-in, .transition-in, .transition-out
 {
@@ -192,6 +194,17 @@ body{background-color:#fff;color:#000;font-family:Roboto,sans-serif;font-size:1e
 .transition-in, .transition-out
 {
     position:absolute;
+}
+.revision-span-in {
+	opacity: 0;
+}
+.revision-span:not(.revision-span-out) {
+	transition: 1s;
+	-webkit-transition: 1s;
+}
+.revision-span-out {
+	position:absolute;
+	opacity: 0;
 }
 </style>
 </head>
