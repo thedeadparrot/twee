@@ -423,7 +423,7 @@ function Tale(){
       }
     }
   }
-  this.title="Sugarcane";
+  this.title="";
   if(this.passages.StoryTitle) this.title=this.passages.StoryTitle.text
 }
 Tale.prototype.has=function(a){if(typeof a=="string"){return(this.passages[a]!=null)}else{for(i in this.passages){if(this.passages[i].id==a){return true}}return false}};
@@ -1300,7 +1300,7 @@ body{ font-family: Roboto, sans-serif; font-size: 12px; line-height: 16px; }
     ALL: Black and white
    =================== */
 
-#header-container{ border-bottom: 1px solid #000; }
+#header-container{ border-bottom: 0px solid #000; }
 #footer-container{ border-top:    1px solid #000; }
 #main aside      { border-top:    1px solid #000; }
 
@@ -1385,7 +1385,7 @@ nav a:hover{
 #credits a { color:#999; text-decoration:none; }
 #credits a:hover { text-decoration:underline; }
 
-#passages { font-size: 12px; line-height: 16px; padding: 1.5em; }
+#passages { font-size: 2em; line-height: 1.7em; padding: 3em 0em; }
 .passage ul{padding-top:1.3em;/*text-align:center;*/}
 .passage li{/*display:inline;*/margin-right:6em;}
 a.internalLink,a.externalLink,a.back,a.return{text-decoration:none; font-weight:bold; color: #086CA2;}
@@ -1425,7 +1425,7 @@ a.brokenLink{background-color:#fcc;text-decoration:none;color:#000;}
 	
 	nav li:last-child a, #storyMenu li:last-child a{ margin-right:0; }
 	#title { margin-top: 0.5em; margin-bottom: 0.5em; }
-	#passages { font-size: 12px; line-height: 18px; }
+	#passages { font-size: 2em; line-height: 1.6em; }
 	
 /* ========================
     INTERMEDIATE: IE Fixes
@@ -1466,7 +1466,7 @@ a.brokenLink{background-color:#fcc;text-decoration:none;color:#000;}
 		margin-top: 0.5em;
 	}
 	#title { margin-top: 1em; margin-bottom: 0.5em; }
-	#passages { font-size: 14px; line-height: 21px; width: 640px; }
+	#passages { font-size: 2em; line-height: 1.6em; width: 100%; }
 
 /* ============
     WIDE: Main
@@ -1494,7 +1494,7 @@ a.brokenLink{background-color:#fcc;text-decoration:none;color:#000;}
 		margin:0 auto;
 	}
 	nav { margin-top: 1em; }
-	#passages { font-size: 15px; line-height: 23px; width: 640px; }
+	#passages { font-size: 2em; line-height: 1.6em; width: 100%; }
 }
 
 /* =============================================================================
@@ -1556,11 +1556,4 @@ a.brokenLink{background-color:#fcc;text-decoration:none;color:#000;}
 		</div> <!-- #main -->
 	</div> <!-- #main-container -->
 
-	<div id="footer-container">
-		<footer class="wrapper">
-			<div id="credits">This story was created with <a href="http://gimcrackd.com/etc/src/">Twine</a> and is powered by <a href="http://tiddlywiki.com/">TiddlyWiki</a>. 
-			The Responsive Story Format is by <a href="http://www.eturnerx.com">Emmanuel King Turner</a> Twitter: @stormrose and it uses <a href="http://www.initializr.com/">Initializr</a>, <a href="http://jquery.com">jQuery</a> and <a href="modernizr.com">Modernizr</a>. 
-			</div>
-		</footer>
-	</div>
 <div id="storeArea">
